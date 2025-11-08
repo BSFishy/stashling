@@ -575,6 +575,16 @@
     };
     version = "1.1.5";
   };
+  mini_portile2 = {
+    groups = ["default" "development" "test"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "12f2830x7pq3kj0v8nz0zjvaw02sv01bqs1zwdrc04704kwcgmqc";
+      type = "gem";
+    };
+    version = "2.8.9";
+  };
   minitest = {
     groups = ["default" "development" "test"];
     platforms = [];
@@ -682,12 +692,12 @@
     version = "2.7.5";
   };
   nokogiri = {
-    dependencies = ["racc"];
+    dependencies = ["mini_portile2" "racc"];
     groups = ["default" "development" "test"];
     platforms = [];
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "0i2k373apjjgiq7k0l3wq4626nfln616sdrmwqmlmir9swsp5f3z";
+      sha256 = "1hcwwr2h8jnqqxmf8mfb52b0dchr7pm064ingflb78wa00qhgk6m";
       type = "gem";
     };
     version = "1.18.10";
@@ -1146,11 +1156,12 @@
     version = "1.2.4";
   };
   sqlite3 = {
+    dependencies = ["mini_portile2"];
     groups = ["default"];
     platforms = [];
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "00r583a04snw7c6ljix25vcg1ps2cnlsjkm5xs752dzdgza5x2ry";
+      sha256 = "1q92qa2yzxx01kr26q8zp22d4lxfizdwbkq0xw3jk6f01vxh7d48";
       type = "gem";
     };
     version = "2.8.0";
