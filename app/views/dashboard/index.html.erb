@@ -13,6 +13,7 @@
     <div class="dashboard-hero__actions">
       <button type="button" class="btn btn--primary">Add Lot</button>
       <button type="button" class="btn btn--secondary">Refresh Prices</button>
+      <a href="#configuration-panel" class="btn btn--ghost">Configure App</a>
     </div>
   </header>
 
@@ -27,6 +28,50 @@
         </li>
       <% end %>
     </ul>
+  </section>
+
+  <section class="panel panel--accounts" id="account-overview">
+    <div class="panel__header">
+      <div>
+        <h2>Accounts</h2>
+        <p class="panel__hint">Filter performance by brokerage or strategy bucket.</p>
+      </div>
+      <label class="account-filter">
+        <span>Account</span>
+        <select>
+          <% @accounts.each do |account| %>
+            <option value="<%= account.id %>"><%= account.name %></option>
+          <% end %>
+          <% if @accounts.empty? %>
+            <option selected>Add an account to begin</option>
+          <% end %>
+        </select>
+      </label>
+    </div>
+    <div class="account-grid">
+      <% @account_glances.each do |acct| %>
+        <article class="account-card <%= 'account-card--placeholder' if acct[:placeholder] %>">
+          <header>
+            <p class="account-card__name"><%= acct[:name] %></p>
+            <p class="account-card__institution"><%= acct[:institution] %></p>
+          </header>
+          <dl>
+            <div>
+              <dt>Value</dt>
+              <dd><%= acct[:value] %></dd>
+            </div>
+            <div>
+              <dt>Cost Basis</dt>
+              <dd><%= acct[:cost_basis] %></dd>
+            </div>
+            <div>
+              <dt>Unrealized</dt>
+              <dd><%= acct[:unrealized] %></dd>
+            </div>
+          </dl>
+        </article>
+      <% end %>
+    </div>
   </section>
 
   <section class="panel panel--grid">
@@ -60,5 +105,23 @@
     <ul class="activity-feed">
       <li>• No activity yet — add your first lot to get started.</li>
     </ul>
+  </section>
+
+  <section class="panel panel--configuration" id="configuration-panel">
+    <div class="panel__header">
+      <h2>Configuration</h2>
+      <p class="panel__hint">Set up accounts, providers, and global preferences.</p>
+    </div>
+    <div class="configuration-grid">
+      <% @configuration_actions.each do |action| %>
+        <article class="configuration-card <%= 'configuration-card--primary' if action[:primary] %>">
+          <h3><%= action[:label] %></h3>
+          <p><%= action[:description] %></p>
+          <button type="button" class="btn btn--secondary">
+            <%= action[:primary] ? "Start Setup" : "Open" %>
+          </button>
+        </article>
+      <% end %>
+    </div>
   </section>
 </main>
