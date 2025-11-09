@@ -9,6 +9,21 @@ Rails.application.routes.draw do
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
+  namespace :api do
+    namespace :v1 do
+      resources :assets, except: %i[new edit]
+      resources :accounts, except: %i[new edit]
+      resources :lots, except: %i[new edit]
+      resources :sales, except: %i[new edit]
+      resources :sale_allocations, except: %i[new edit]
+      resources :valuations, except: %i[new edit]
+      resources :price_sources, except: %i[new edit]
+      resources :adjustments, except: %i[new edit]
+      resources :imports, except: %i[new edit]
+      resources :audit_events, except: %i[new edit]
+    end
+  end
+
   root "investments#index"
   resources :investments
 end

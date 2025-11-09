@@ -29,7 +29,8 @@ and feature requirements, read `spec.md` in full before making changes.
 ## Working In This Repo
 
 - Use project binstubs (`bin/rails`, `bin/rake`, `bin/rspec` if present) instead
-  of global executables.
+  of global executables, and prefer the native Rails CLI/generators for creating
+  or updating files whenever possible rather than editing by hand.
 - Favor standard Rails generators when scaffolding models/migrations so
   timestamps, naming, and foreign keys stay consistent.
 - Migrations must be idempotent and reversible; check `db/schema.rb` and
