@@ -1,0 +1,12 @@
+<h1>Investments#index</h1>
+<p>Find me in app/views/investments/index.html.erb</p>
+
+<%= link_to "New investment", new_investment_path %>
+
+<div id="investments">
+  <% @investments.each do |investment| %>
+    <div>
+      <%= link_to investment.ticker, investment_path(investment.id) %>
+    </div>
+  <% end %>
+</div>
