@@ -5,7 +5,7 @@ echo "Removing current generated files"
 [ -e ./gemset.nix ] && rm ./gemset.nix
 
 echo "Creating a Gemfile.lock by running @bundler@"
-@bundler@ lock
+BUNDLE_FORCE_RUBY_PLATFORM=1 @bundler@ lock
 
 echo "Create a gemset.nix by running @bundix@"
 @bundix@ --lock
