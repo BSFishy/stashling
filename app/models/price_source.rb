@@ -1,0 +1,2 @@
+class PriceSource < ApplicationRecord
+end

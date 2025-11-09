@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  asset: one
+  lot: one
+  price: 9.99
+  as_of: 2025-11-09 02:08:42
+  source: MyString
+  metrics: 
+
+two:
+  asset: two
+  lot: two
+  price: 9.99
+  as_of: 2025-11-09 02:08:42
+  source: MyString
+  metrics: 

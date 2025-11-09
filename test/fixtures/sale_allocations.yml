@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sale: one
+  lot: one
+  quantity: 9.99
+  realized_pl: 9.99
+  cost_basis_snapshot: 
+
+two:
+  sale: two
+  lot: two
+  quantity: 9.99
+  realized_pl: 9.99
+  cost_basis_snapshot: 

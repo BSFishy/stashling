@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  asset: one
+  account: one
+  trade_date: 2025-11-09
+  settle_date: 2025-11-09
+  quantity: 9.99
+  unit_cost: 9.99
+  fees: 9.99
+  tags: 
+  notes: MyText
+
+two:
+  asset: two
+  account: two
+  trade_date: 2025-11-09
+  settle_date: 2025-11-09
+  quantity: 9.99
+  unit_cost: 9.99
+  fees: 9.99
+  tags: 
+  notes: MyText
