@@ -3,13 +3,17 @@
 one:
   sale: one
   lot: one
-  quantity: 9.99
-  realized_pl: 9.99
-  cost_basis_snapshot: 
+  quantity: 3.0
+  realized_pl: 150.0
+  cost_basis_snapshot:
+    unit_cost: 420.00
+    fees: 1.00
 
 two:
   sale: two
   lot: two
-  quantity: 9.99
-  realized_pl: 9.99
-  cost_basis_snapshot: 
+  quantity: 1.0
+  realized_pl: 60.0
+  cost_basis_snapshot:
+    unit_cost: 350.00
+    fees: 1.00

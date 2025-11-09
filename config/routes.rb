@@ -24,5 +24,5 @@ Rails.application.routes.draw do
     end
   end
 
-  root "api/v1/assets#index"
+  root "dashboard#index"
 end

@@ -1,0 +1,64 @@
+<% content_for :title, "Stashling · Portfolio" %>
+
+<main class="dashboard-shell">
+  <header class="dashboard-hero">
+    <div class="dashboard-hero__copy">
+      <p class="eyebrow">Portfolio Overview</p>
+      <h1>Stashling</h1>
+      <p>
+        Capture every lot, direct each sale, and visualize performance over time.
+        This surface will evolve into the interactive canvas described in the spec.
+      </p>
+    </div>
+    <div class="dashboard-hero__actions">
+      <button type="button" class="btn btn--primary">Add Lot</button>
+      <button type="button" class="btn btn--secondary">Refresh Prices</button>
+    </div>
+  </header>
+
+  <section class="panel panel--stats">
+    <h2>Key Metrics</h2>
+    <ul class="stat-list">
+      <% @summary_stats.each do |stat| %>
+        <li class="stat-list__item">
+          <p class="stat-list__label"><%= stat[:label] %></p>
+          <p class="stat-list__value"><%= stat[:value] %></p>
+          <p class="stat-list__hint"><%= stat[:hint] %></p>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+
+  <section class="panel panel--grid">
+    <h2>Workflows</h2>
+    <div class="workflow-grid">
+      <% @pipelines.each do |pipe| %>
+        <article class="workflow-card">
+          <h3><%= pipe[:title] %></h3>
+          <p><%= pipe[:description] %></p>
+          <button type="button" class="btn btn--ghost"><%= pipe[:cta] %></button>
+        </article>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="panel panel--canvas">
+    <div class="panel__header">
+      <h2>Timeline Preview</h2>
+      <p class="panel__hint">Canvas renderer placeholder — wire lots + valuations here.</p>
+    </div>
+    <div class="canvas-placeholder" data-role="timeline-canvas">
+      <span>Canvas rendering surface</span>
+    </div>
+  </section>
+
+  <section class="panel panel--activity">
+    <div class="panel__header">
+      <h2>Recent Activity</h2>
+      <p class="panel__hint">Once data is flowing, stream audit events into this list.</p>
+    </div>
+    <ul class="activity-feed">
+      <li>• No activity yet — add your first lot to get started.</li>
+    </ul>
+  </section>
+</main>

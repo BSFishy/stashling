@@ -3,15 +3,17 @@
 one:
   asset: one
   lot: one
-  price: 9.99
-  as_of: 2025-11-09 02:08:42
-  source: MyString
-  metrics: 
+  price: 450.00
+  as_of: 2025-10-01 12:00:00
+  source: alpha_vantage
+  metrics:
+    unrealized_pl: 290.0
 
 two:
   asset: two
   lot: two
-  price: 9.99
-  as_of: 2025-11-09 02:08:42
-  source: MyString
-  metrics: 
+  price: 400.00
+  as_of: 2025-10-01 12:00:00
+  source: alpha_vantage
+  metrics:
+    unrealized_pl: 250.0

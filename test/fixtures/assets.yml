@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  ticker: MyString
-  security_type: MyString
-  currency: MyString
-  display_name: MyString
+  ticker: SPY
+  security_type: 0 # equity
+  currency: USD
+  display_name: SPDR S&P 500 ETF
 
 two:
-  ticker: MyString
-  security_type: MyString
-  currency: MyString
-  display_name: MyString
+  ticker: QQQ
+  security_type: 1 # etf
+  currency: USD
+  display_name: Invesco QQQ Trust

@@ -8,3 +8,160 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+:root {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111;
+  background-color: #0f1115;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  background: #0f1115;
+  color: #e3e8f2;
+}
+
+.dashboard-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.dashboard-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #1b1f29;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.dashboard-hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #58a6ff;
+  color: #0f1115;
+}
+
+.btn--secondary {
+  background: transparent;
+  color: #e3e8f2;
+  border: 1px solid rgba(227, 232, 242, 0.3);
+}
+
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.08);
+  color: inherit;
+}
+
+.panel {
+  background: #11151f;
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.panel__hint {
+  color: #9aa4bc;
+  font-size: 0.9rem;
+}
+
+.stat-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.stat-list__item {
+  background: #1b1f29;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.stat-list__label {
+  font-size: 0.85rem;
+  color: #9aa4bc;
+  margin: 0;
+}
+
+.stat-list__value {
+  font-size: 1.5rem;
+  margin: 0.35rem 0;
+}
+
+.stat-list__hint {
+  font-size: 0.85rem;
+  color: #9aa4bc;
+  margin: 0;
+}
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.workflow-card {
+  background: #1b1f29;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.canvas-placeholder {
+  height: 280px;
+  border-radius: 0.75rem;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(88, 166, 255, 0.15),
+    rgba(88, 166, 255, 0.15) 10px,
+    rgba(15, 17, 21, 0.8) 10px,
+    rgba(15, 17, 21, 0.8) 20px
+  );
+  display: grid;
+  place-items: center;
+  color: #9aa4bc;
+}
+
+.activity-feed {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  color: #9aa4bc;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.8rem;
+  color: #9aa4bc;
+  margin: 0 0 0.5rem;
+}

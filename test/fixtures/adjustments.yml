@@ -2,16 +2,18 @@
 
 one:
   lot: one
-  adjustment_type: MyString
-  amount: 9.99
-  effective_date: 2025-11-09
-  notes: MyText
-  metadata: 
+  adjustment_type: 0 # dividend
+  amount: 12.34
+  effective_date: 2025-05-01
+  notes: Quarterly dividend
+  metadata:
+    reinvested: false
 
 two:
   lot: two
-  adjustment_type: MyString
-  amount: 9.99
-  effective_date: 2025-11-09
-  notes: MyText
-  metadata: 
+  adjustment_type: 2 # fee
+  amount: 1.50
+  effective_date: 2025-06-10
+  notes: ADR fee
+  metadata:
+    source: "Manual"

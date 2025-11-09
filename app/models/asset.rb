@@ -1,5 +1,5 @@
 class Asset < ApplicationRecord
-  enum security_type: {
+  enum :security_type, {
     equity: 0,
     etf: 1,
     mutual_fund: 2,

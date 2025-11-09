@@ -3,21 +3,23 @@
 one:
   asset: one
   account: one
-  trade_date: 2025-11-09
-  settle_date: 2025-11-09
-  quantity: 9.99
-  unit_cost: 9.99
-  fees: 9.99
-  tags: 
-  notes: MyText
+  trade_date: 2025-01-02
+  settle_date: 2025-01-06
+  quantity: 10.0
+  unit_cost: 420.00
+  fees: 1.00
+  tags:
+    strategy: core
+  notes: Initial SPY buy
 
 two:
   asset: two
   account: two
-  trade_date: 2025-11-09
-  settle_date: 2025-11-09
-  quantity: 9.99
-  unit_cost: 9.99
-  fees: 9.99
-  tags: 
-  notes: MyText
+  trade_date: 2025-03-15
+  settle_date: 2025-03-18
+  quantity: 5.0
+  unit_cost: 350.00
+  fees: 1.00
+  tags:
+    strategy: growth
+  notes: QQQ add

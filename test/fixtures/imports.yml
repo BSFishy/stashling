@@ -1,13 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  filename: MyString
-  status: MyString
-  payload: 
-  error_log: MyText
+  filename: spy_lots.csv
+  status: 0
+  payload:
+    rows: 15
+  error_log:
 
 two:
-  filename: MyString
-  status: MyString
-  payload: 
-  error_log: MyText
+  filename: qqq_sales.csv
+  status: 3
+  payload:
+    rows: 4
+  error_log:

@@ -1,17 +1,21 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  entity_type: MyString
+  entity_type: Lot
   entity_id: 1
-  action: MyString
-  before: 
-  after: 
-  actor: MyString
+  action: 0
+  before:
+    quantity: 5
+  after:
+    quantity: 3
+  actor: system
 
 two:
-  entity_type: MyString
+  entity_type: Import
   entity_id: 1
-  action: MyString
-  before: 
-  after: 
-  actor: MyString
+  action: 1
+  before:
+    status: pending
+  after:
+    status: committed
+  actor: system

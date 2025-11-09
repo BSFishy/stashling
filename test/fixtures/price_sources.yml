@@ -1,11 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  adapter_type: MyString
-  credentials: 
+  name: Primary Provider
+  adapter_type: alpha_vantage
+  credentials:
+    api_key: test
 
 two:
-  name: MyString
-  adapter_type: MyString
-  credentials: 
+  name: Backup Provider
+  adapter_type: polygon
+  credentials:
+    api_key: test
