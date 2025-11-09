@@ -1,6 +1,6 @@
-class CreateInvestments < ActiveRecord::Migration[8.0]
+class DropInvestments < ActiveRecord::Migration[8.1]
   def change
-    create_table :investments do |t|
+    drop_table :investments do |t|
       t.string :ticker
       t.float :amount
 

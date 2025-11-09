@@ -24,6 +24,5 @@ Rails.application.routes.draw do
     end
   end
 
-  root "investments#index"
-  resources :investments
+  root "api/v1/assets#index"
 end

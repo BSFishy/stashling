@@ -1,9 +1,0 @@
-<% cache @investment do %>
-  <h1><%= @investment.ticker %></h1>
-
-  <span><%= @investment.amount %> shares</span>
-<% end %>
-
-<%= link_to "Back", investments_path %>
-<%= link_to "Edit", edit_investment_path(@investment) %>
-<%= button_to "Delete", @investment, method: :delete, data: { turbo_confirm: "Are you sure?" } %>

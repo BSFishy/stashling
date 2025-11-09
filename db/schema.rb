@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2025_11_09_020858) do
+ActiveRecord::Schema[8.1].define(version: 2025_11_09_023325) do
   create_table "accounts", force: :cascade do |t|
     t.string "base_currency"
     t.datetime "created_at", null: false
@@ -57,13 +57,6 @@ ActiveRecord::Schema[8.1].define(version: 2025_11_09_020858) do
     t.string "filename"
     t.json "payload"
     t.integer "status", default: 0, null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "investments", force: :cascade do |t|
-    t.float "amount"
-    t.datetime "created_at", null: false
-    t.string "ticker"
     t.datetime "updated_at", null: false
   end
 
